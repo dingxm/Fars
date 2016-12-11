@@ -19,7 +19,8 @@ Read the data in multiple years and only select the MONTH and year column
 if year is invalid, the program will exit silently with a warning
 }
 \examples{
-fars_read_years(C(2013,2014,2015))
+fars_read_years(c(2013,2014,2015))
+
 
 }
 

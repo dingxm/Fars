@@ -19,7 +19,9 @@ Read a csv file and convert it into a tibble
 if file did not exit, the prgram will exit with an error
 }
 \examples{
+
 fars_read("accident_2015.csv.bz2")
+
 
 }
 

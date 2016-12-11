@@ -12,12 +12,13 @@
 #' @return a tibble
 #'
 #' @examples
-#' \dontrun{
-#' fars_read("data//accident_2015.csv.bz2")
-#' }
+#'
+#' fars_read("accident_2015.csv.bz2")
+#'
 #'
 #' @export
 fars_read <- function(filename) {
+  filename <- system.file("extdata", filename, package="fars")
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
   data <- suppressMessages({
@@ -51,15 +52,15 @@ make_filename <- function(year) {
 #' @note if year is invalid, the program will exit silently with a warning
 #'
 #' @importFrom dplyr mutate select
+#' @importFrom magrittr %>%
 #'
 #' @param years a vector of the name of multiple years
 #'
 #' @return a list of tibble
 #'
 #' @examples
-#' \dontrun{
-#' fars_read_years(C(2013,2014,2015))
-#' }
+#' fars_read_years(c(2013,2014,2015))
+#'
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -88,9 +89,7 @@ fars_read_years <- function(years) {
 #' @return a tibble of the summarized data
 #'
 #' @examples
-#' \dontrun{
 #' fars_summarize_years(c(2013,2014,2015))
-#' }
 #'
 #' @export
 fars_summarize_years <- function(years) {

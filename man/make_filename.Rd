@@ -13,7 +13,7 @@ make_filename(year)
 a character which is the file name
 }
 \description{
-Convert the year into a the name of the file which which contain 
+Convert the year into a the name of the file which which contain
 the accident information in this year
 }
 \examples{

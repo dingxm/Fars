@@ -22,7 +22,9 @@ if the LONGITUD > 900 or LATITUDE > 90, the location will be ignored.
 if state.num is invalid, the program will exit with an error
 }
 \examples{
+\dontrun{
 fars_map_state(1,2015)
+}
 
 }
 
