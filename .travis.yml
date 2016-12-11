@@ -1,9 +1,5 @@
 # Sample .travis.yml for R projects
 
 language: r
-<<<<<<< HEAD
 warnings_are_errors: false
-=======
-warnings_are_errors: true
->>>>>>> df4538076a7d529541ada3fdcfd9a4363bc88b68
 sudo: required

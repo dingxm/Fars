@@ -7,11 +7,10 @@ Depends: R (>= 3.3.1)
 Author: Xiangming Ding <dingxm1978@gmail.com>
 Imports: dplyr, maps, readr, tidyr, magrittr
 Maintainer: Xiangming Ding <dingxm1978@gmail.com>
-Description: A software to calculate the statistics of fatal accident in each state and plot the location in a map
+Description: A software to calculate the statistics of fatal accident in each state and plot the location in a map.
 License: GPL (>= 2)
 LazyData: TRUE
 RoxygenNote: 5.0.1
 URL: https://github.com/xding/fars
-Suggests: knitr,
-    rmarkdown
+Suggests: knitr, testthat, rmarkdown
 VignetteBuilder: knitr
